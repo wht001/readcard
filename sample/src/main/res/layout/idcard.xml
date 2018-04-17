@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:keepScreenOn="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="身份证读卡"
+        android:textColor="@color/colorAccent"
+        android:textSize="48sp"
+        android:textStyle="italic" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/idcard"
+                android:layout_width="143dp"
+                android:layout_height="86dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/console3_button_style"
+                android:elevation="0dp"
+                android:onClick="click"
+                android:text="身份证读卡" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/mReception_data_idcard"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_marginBottom="15dp"
+        android:background="@android:color/darker_gray"
+        android:text="未接受到数据"
+        android:textColor="@android:color/background_dark"
+        android:textSize="24sp" />
+
+
+</LinearLayout>
